@@ -1,0 +1,8 @@
+/*.zip
+/generate/
+/node_modules/
+/index.php
+/.idea
+/package.json
+/demo/css/*.scss
+/gulpfile.js
