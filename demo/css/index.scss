@@ -1,0 +1,132 @@
+@import 'variables';
+@import 'functions';
+@import 'reset';
+
+//  Body
+
+body {
+  background: c(background);
+  font-size: 14px;
+}
+
+//   Headings
+
+h1 {
+  font-size: 2.2em;
+  font-weight: 700;
+  margin-bottom: $gutter;
+}
+
+h2 {
+  font-size: 1.9em;
+  font-weight: 700;
+  margin-bottom: $gutter*2;
+}
+
+h3 {
+  font-size: 1.6em;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.3em;
+  font-weight: 700;
+  margin-bottom: $gutter/2;
+}
+
+h2, h3 {
+  &:before {
+    background: c(primary);
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 100%;
+    height: 100%;
+    width: 2px;
+    margin-right: $gutter/2;
+  }
+}
+
+//  Page
+
+hr {
+  background: c(fade);
+  height: 2px;
+}
+
+.section {
+  padding: $gutter*3 0;
+  .block {
+    &:not(:last-child) {
+      margin-bottom: $gutter*2;
+    }
+    > *:not(:last-child) {
+      margin-bottom: $gutter;
+    }
+  }
+}
+
+.container {
+  display: block;
+  max-width: $grid;
+  padding: 0 $gutter;
+  margin: 0 auto;
+}
+
+.code {
+  background: c(fade);
+  font-family: monospace;
+  font-size: 0.8em;
+  display: block;
+  max-width: 100%;
+  padding: $gutter;
+  border-bottom: solid 1px c(fade);
+}
+
+#header {
+  background: c(fade);
+  border-bottom: solid 2px c(primary);
+}
+
+#installation {
+  .description {
+    margin-bottom: $gutter;
+  }
+}
+
+#usage {
+  .method {
+    .method-header {
+      .title,
+      .description {
+        display: inline;
+        vertical-align: middle;
+      }
+      .description {
+        margin-left: $gutter;
+      }
+    }
+    .method-parameters {
+      text-align: left;
+      width: 100%;
+      thead th {
+        font-weight: 700;
+        padding: 0 0 $gutter/3;
+      }
+      tbody tr:not(:last-child) td {
+        padding: 0 0 $gutter/3;
+      }
+      .name {
+        text-decoration: underline;
+      }
+      .type {
+        font-weight: 700;
+      }
+      .description {
+        font-style: italic;
+      }
+    }
+  }
+}
+
+@import 'demo';

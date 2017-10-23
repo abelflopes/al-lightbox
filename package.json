@@ -1,0 +1,31 @@
+{
+  "name": "abellopes",
+  "version": "1.1.1",
+  "description": "Abel Lopes Website",
+  "author": "Abel Lopes <abelflopes@gmail.com>",
+  "contributors": [
+    {
+      "name": "Abel Lopes",
+      "email": "abelflopes@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-clean-css": "*",
+    "gulp-concat": "*",
+    "gulp-if": "*",
+    "gulp-sass": "*",
+    "gulp-strip-comments": "*",
+    "gulp-tap": "*",
+    "gulp-uglify": "*",
+    "gulp-util": "*",
+    "gulp-watch": "*",
+    "require-dir": "*"
+  },
+  "dependencies": {}
+}

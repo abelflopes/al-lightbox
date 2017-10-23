@@ -1,0 +1,6 @@
+//  Functions
+
+//  Returns a color from $color map (defined in _variables.scss)
+@function c($key){
+  @return map-get($color, $key)
+}
